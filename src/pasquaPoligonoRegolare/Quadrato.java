@@ -28,13 +28,13 @@ class Quadrato extends PoligonoRegolare {
         for (int i = 0; i < getLato(); i++) {
             if (i == 0 || i == getLato()-1) {
                 for (int j = 0; j < getLato(); j++) {
-                    disegno += carattere;
+                    disegno += carattere + " ";
                 }
                 disegno += "\n";
             } else {
-                disegno += carattere;
+                disegno += carattere + " ";
                 for (int r = 0; r < getLato() - 2; r++) {
-                    disegno = disegno + " ";
+                    disegno = disegno + "  ";
                 }
                 disegno = disegno + carattere + "\n";
             }
