@@ -11,7 +11,8 @@ public class TestPoligono {
             System.out.println("\nTest della classe Quadrato:");
             quadrato = new Quadrato(4);
             System.out.println(quadrato);
-            System.out.println("Area: " + quadrato.area());
+            System.out.print(quadrato.disegno('X'));
+            System.out.println("\nArea: " + quadrato.area());
             System.out.println("Perimetro: " + quadrato.perimetro());
             System.out.println("Diagonale: " + quadrato.diagonale());
             System.out.println("Apotema: " + quadrato.apotema());
