@@ -16,4 +16,9 @@ class Esagono extends PoligonoRegolare {
     public float apotema() {
         return 2 * area() / (2 * perimetro());
     }
+
+    @Override
+    public String toString() {
+        return "\nEsagono\n\nLato: " + this.getLato() + "\nNumero di Lati: " + this.getnLati() + "\n";
+    }
 }

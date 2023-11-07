@@ -20,6 +20,6 @@ class Quadrato extends PoligonoRegolare {
 
     @Override
     public String toString() {
-        return "\nLato: " + this.getLato();
+        return "\nQuadrato\n\nLato: " + this.getLato() + "\nNumero di Lati: " + this.getnLati() + "\n";
     }
 }

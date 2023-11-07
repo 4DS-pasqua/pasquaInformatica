@@ -16,4 +16,9 @@ class Pentagono extends PoligonoRegolare {
     public float apotema() {
         return getLato() * 0.688f;
     }
+
+    @Override
+    public String toString() {
+        return "\nPentagono\n\nLato: " + this.getLato() + "\nNumero di Lati: " + this.getnLati() + "\n";
+    }
 }

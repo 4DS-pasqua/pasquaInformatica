@@ -22,4 +22,9 @@ class Rombo extends PoligonoRegolare {
     public float apotema() {
         return 2 * area() / perimetro();
     }
+
+    @Override
+    public String toString() {
+        return "\nRombo\n\nLato: " + this.getLato() + "\nNumero di Lati: " + this.getnLati() + "\n";
+    }
 }
