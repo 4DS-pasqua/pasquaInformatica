@@ -29,7 +29,7 @@ class Rombo extends PoligonoRegolare {
     }
 
     public String disegno(char carattere) {
-        int n = (int)this.getnLati();
+        int n = (int)this.getLato();
 
         String str = "";
 
@@ -43,9 +43,9 @@ class Rombo extends PoligonoRegolare {
                 str += " ";
             }
 
-            if (i == 1){
+            if (i == 1) {
                 str += "\n";
-            }else{
+            } else {
                 str += (carattere + "\n");
             }
 
@@ -63,7 +63,7 @@ class Rombo extends PoligonoRegolare {
 
             if (i == 1){
                 str += "\n";
-            }else{
+            } else {
                 str += (carattere + "\n");
             }
         }
