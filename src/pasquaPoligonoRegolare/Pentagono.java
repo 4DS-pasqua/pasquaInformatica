@@ -9,10 +9,6 @@ class Pentagono extends PoligonoRegolare {
         return 1.72f * getLato() * getLato();
     }
 
-    public float perimetro() {
-        return getnLati() * getLato();
-    }
-
     public float diagonale() {
         return getLato() * (1 + (float) Math.sqrt(5)) / 2;
     }

@@ -15,10 +15,6 @@ class Rombo extends PoligonoRegolare {
         return getLato() * getLato() * (float) Math.sin(Math.toRadians(60)); // Assume angolo fisso di 60 gradi
     }
 
-    public float perimetro() {
-        return getnLati() * getLato();
-    }
-
     public float diagonaleMinore() {
         return (2 * area()) / diagonaleMaggiore;
     }

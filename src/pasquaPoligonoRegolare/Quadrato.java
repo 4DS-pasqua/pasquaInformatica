@@ -5,12 +5,9 @@ class Quadrato extends PoligonoRegolare {
         super(lato, 4);
     }
 
+    //Abstract
     public float area() {
         return getLato() * getLato();
-    }
-
-    public float perimetro() {
-        return getnLati() * getLato();
     }
 
     public float diagonale() {
@@ -19,5 +16,10 @@ class Quadrato extends PoligonoRegolare {
 
     public float apotema() {
         return getLato() / 2;
+    }
+
+    @Override
+    public String toString() {
+        return "\nLato: " + this.getLato();
     }
 }

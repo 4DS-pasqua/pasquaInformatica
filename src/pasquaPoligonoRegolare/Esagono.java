@@ -9,10 +9,6 @@ class Esagono extends PoligonoRegolare {
         return 1.5f * (float) Math.sqrt(3) * getLato() * getLato();
     }
 
-    public float perimetro() {
-        return getnLati() * getLato();
-    }
-
     public float diagonale() {
         return 2 * getLato();
     }
