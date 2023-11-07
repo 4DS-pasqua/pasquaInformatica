@@ -25,7 +25,8 @@ public class TestPoligono {
             System.out.println("\nTest della classe Rombo:");
             rombo = new Rombo(3, 4);
             System.out.println(rombo);
-            System.out.println("Area: " + rombo.area());
+            System.out.print(rombo.disegno('X'));
+            System.out.println("\nArea: " + rombo.area());
             System.out.println("Perimetro: " + rombo.perimetro());
             System.out.println("Diagonale minore: " + rombo.diagonaleMinore());
             System.out.println("Apotema: " + rombo.apotema());

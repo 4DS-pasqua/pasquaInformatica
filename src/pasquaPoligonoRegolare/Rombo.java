@@ -27,4 +27,47 @@ class Rombo extends PoligonoRegolare {
     public String toString() {
         return "\nRombo\n\nLato: " + this.getLato() + "\nNumero di Lati: " + this.getnLati() + "\n";
     }
+
+    public String disegno(char carattere) {
+        int n = (int)this.getnLati();
+
+        String str = "";
+
+        //parte sopra del rombo
+        for (int i = 1; i <= n; i++) {
+            for (int j = n; j > i; j--){
+                str += " ";
+            }
+            str += carattere;
+            for (int j = 1; j < (i - 1) * 2; j++){
+                str += " ";
+            }
+
+            if (i == 1){
+                str += "\n";
+            }else{
+                str += (carattere + "\n");
+            }
+
+        }
+
+        // Costruzione della parte inferiore del rombo
+        for (int i = n - 1; i >= 1; i--) {
+            for (int j = n; j > i; j--){
+                str += " ";
+            }
+            str += carattere;
+            for (int j = 1; j < (i - 1) * 2; j++){
+                str += " ";
+            }
+
+            if (i == 1){
+                str += "\n";
+            }else{
+                str += (carattere + "\n");
+            }
+        }
+
+        return str;
+    }
 }
