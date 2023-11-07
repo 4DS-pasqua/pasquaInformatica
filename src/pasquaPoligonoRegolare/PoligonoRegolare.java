@@ -43,6 +43,8 @@ abstract class PoligonoRegolare {
 
     public abstract float area();
 
+    public abstract String disegno(char carattere);
+
     public float perimetro() {
         return nLati * lato;
     }

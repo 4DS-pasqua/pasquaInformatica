@@ -21,4 +21,8 @@ class Esagono extends PoligonoRegolare {
     public String toString() {
         return "\nEsagono\n\nLato: " + this.getLato() + "\nNumero di Lati: " + this.getnLati() + "\n";
     }
+
+    public String disegno(char carattere) {
+        return "";
+    };
 }

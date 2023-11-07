@@ -21,4 +21,8 @@ class Pentagono extends PoligonoRegolare {
     public String toString() {
         return "\nPentagono\n\nLato: " + this.getLato() + "\nNumero di Lati: " + this.getnLati() + "\n";
     }
+
+    public String disegno(char carattere) {
+        return "";
+    };
 }
