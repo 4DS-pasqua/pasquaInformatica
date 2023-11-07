@@ -1,4 +1,4 @@
-package pasquaPoligonoRegolare;;
+package pasquaStudenteClasse;;
 
 public class Studente {
     private String cognome;
