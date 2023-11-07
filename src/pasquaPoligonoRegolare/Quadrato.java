@@ -26,7 +26,7 @@ class Quadrato extends PoligonoRegolare {
     public String disegno(char carattere) {
         String disegno = "";
         for (int i = 0; i < getLato(); i++) {
-            if (i == 0 || i == getLato()) {
+            if (i == 0 || i == getLato()-1) {
                 for (int j = 0; j < getLato(); j++) {
                     disegno += carattere;
                 }
