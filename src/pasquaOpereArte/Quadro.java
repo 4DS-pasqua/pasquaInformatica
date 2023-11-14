@@ -18,8 +18,26 @@ public class Quadro extends OperaArte {
         }
     }
 
+    public Quadro(Quadro q) {
+        super(q);
+        this.larghezza = q.getLarghezza();
+        this.lunghezza = q.getLunghezza();
+    }
+
+    public double getLarghezza() {
+        return larghezza;
+    }
+
+    public double getLunghezza() {
+        return lunghezza;
+    }
+
     @Override
     public double printIngombro() {
         return larghezza*lunghezza;
+    }
+
+    public String toString() {
+        return super.toString() + " - Dimensioni: " + lunghezza + " x " + larghezza;
     }
 }

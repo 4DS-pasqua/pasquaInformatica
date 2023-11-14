@@ -24,8 +24,31 @@ public class Scultura extends OperaArte {
         }
     }
 
+    public Scultura(Scultura s) {
+        super(s);
+        this.larghezza = s.getLarghezza();
+        this.lunghezza = s.getLunghezza();
+        this.profondita = s.getProfondita();
+    }
+
+    public double getLarghezza() {
+        return larghezza;
+    }
+
+    public double getLunghezza() {
+        return lunghezza;
+    }
+
+    public double getProfondita() {
+        return profondita;
+    }
+
     @Override
     public double printIngombro() {
         return larghezza*lunghezza*profondita;
+    }
+
+    public String toString() {
+        return super.toString() + " - Dimensioni: " + lunghezza + " x " + larghezza + " x " + profondita;
     }
 }
